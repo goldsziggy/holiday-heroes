@@ -1,0 +1,17 @@
+@import '../../../scss/index.scss';
+
+
+.wrapper{
+  background-color: $mute-color;
+  margin-bottom: 2em;
+  margin-top: 2em;;
+  @media #{$small-only}{
+    margin: 2em;
+  }
+}
+
+.wrapper-content{
+  border-radius: 5px;
+  background-color: $content-color;
+  padding: 4em;
+}

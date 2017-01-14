@@ -11,6 +11,9 @@ export default (config, initialState) => {
         window.__STATE = ${JSON.stringify(initialState)};
         window.__CONFIG = ${JSON.stringify(config)};
       </script>
+      <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.css'>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css">
+      <link rel="stylesheet" type="text/css" href='/static/app.css'>
     </head>
     <body>
       <div id='root'></div>

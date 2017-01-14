@@ -3,19 +3,21 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/configureStore';
 import {Provider} from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router'
-// import { syncHistoryWithStore } from 'react-router-redux'
-import Wrapper from './components/Wrapper';
+import HomePage from './components/HomePage';
+import ContactPage from './components/ContactPage';
+import ServicePage from './components/ServicePage'
 import styles from '../scss/index.scss';
-// import {persistStore} from 'redux-persist';
 
 const state = window.__STATE;
 const store = configureStore(state);
-// const history = syncHistoryWithStore(browserHistory, store)
 
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path='/' component={Wrapper} />
+      <Route path='/' component={HomePage} />
+      <Route path='/home' component={HomePage} />
+      <Route path='/contact' component={ContactPage} />
+      <Route path='/service' component={ServicePage} />
     </Router>
   </Provider>,
   document.getElementById('root')

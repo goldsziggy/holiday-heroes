@@ -1,0 +1,35 @@
+@import '../../../scss/index.scss';
+
+.hh-footer {
+    text-align: center;
+    background-color: $primary-color;
+
+    .menu {
+        background-color: $primary-color;
+        list-style: none;
+        li {
+            display: inline;
+
+            a {
+                color: #f3f3f3;
+            }
+        }
+    }
+    .social {
+      background-color: $primary-color;
+      list-style: none;
+      margin-top: 2em;
+      li{
+        line-height: 1em;
+        display: inline-block;
+        padding: 1em;
+        a{
+          color: #f3f3f3;
+        }
+      }
+    }
+
+    i {
+        font-size: 3em;
+    }
+}

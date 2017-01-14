@@ -1,0 +1,20 @@
+@import '../../../scss/index.scss';
+.hh-menu {
+  background-color: $primary-color;
+  color: #f3f3f3;
+  ul{
+    background-color: $primary-color;
+    a {
+      color: #f3f3f3;
+    }
+  }
+  .top-bar-left{
+    .menu{
+      li{
+        font-family: $holiday-font;
+        font-size: 3em;
+      }
+    }
+  }
+
+}

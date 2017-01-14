@@ -5,6 +5,7 @@ import globals from 'rollup-plugin-node-globals'
 import replace from 'rollup-plugin-replace'
 import resolve from 'rollup-plugin-node-resolve'
 import scss from 'rollup-plugin-scss'
+import image from 'rollup-plugin-image';
 // import serve from 'rollup-plugin-serve'
 
 export default {
@@ -28,6 +29,7 @@ export default {
         exclude: 'node_modules/process-es6/**',
         namedExports : {
                          'node_modules/react/react.js' : ['Component', 'Children', 'createElement', 'PropTypes'],
+                         'node_modules/react-parallax/dist/index.js' : ['Background', 'Parallax'],
                          'node_modules/react-dom/index.js' : ['render']
                      },
         include: [
@@ -43,8 +45,13 @@ export default {
         ]
       }
     ),
-    scss(),
+    scss(
+      {
+        output: 'build/static/app.css'
+      }
+    ),
     globals(),
+    image(),
     replace({ 'process.env.NODE_ENV': JSON.stringify('development') })
 
     // ,serve('build')
