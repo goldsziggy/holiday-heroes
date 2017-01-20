@@ -9,7 +9,7 @@ const middleware = [thunk];
 export default (initialState = {}, isBrowser=true) => {
   const store = createStore(reducers, initialState, compose(
     applyMiddleware(...middleware),
-    isBrowser ? window.devToolsExtension() : f => f
+    isBrowser && window && window.devToolsExtension ? window.devToolsExtension() : f => f
   ))
   return store;
 }
