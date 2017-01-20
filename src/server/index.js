@@ -9,7 +9,7 @@ let httpsPort = 443;
 const enviroment = config.util.getEnv('NODE_ENV');
 
 if(enviroment == 'development'){
-  httpPort = 8080;
+  httpPort = 8888;
   httpsPort = 8443;
 }
 

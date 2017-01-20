@@ -3,10 +3,14 @@
 
 .wrapper{
   background-color: $mute-color;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  @media #{$small-only}{
-    margin: 2em;
+  margin: 2em;
+  /* Small only */
+  // @media screen and (max-width: 39.9375em) {
+  //   margin: 2em;
+  // }
+  @media screen and (min-width: 64em) {
+    margin-left: none;
+    margin-right: none;
   }
 }
 

@@ -11,7 +11,7 @@ export class ContactPage extends React.Component {
     return (
       <div>
         <Topbar/>
-        <div className='row wrapper'>
+        <div className='wrapper'>
           <div className='row'>
             <div className='columns medium-12 medium-centered wrapper-content'>
                 <Contact/>
