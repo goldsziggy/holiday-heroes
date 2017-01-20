@@ -29,7 +29,7 @@ export class Home extends React.Component {
         {/* End about us blurb */}
 
         {/* Typical Jobs */}
-        <div className="row">
+        <div className="row show-for-medium">
           <div className="medium-4 columns">
             <h3>Lighting</h3>
             <p>Our industry professionals have over 10 years experience in setting up the highest quality display.  Each setup and design, is unique with your house and enviroment in mind.</p>
