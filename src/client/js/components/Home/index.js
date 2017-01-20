@@ -8,7 +8,7 @@ export class Home extends React.Component {
     return (
       <div className='row'>
         {/* Call out */}
-        <div className="callout large hh-callout">
+        <div className="callout hh-callout">
           <div className="row column text-center">
             <h1>Brightening the World, One House at a Time</h1>
             <p className="lead">Industry leading lighting - Affordable pricing</p>

@@ -14,6 +14,7 @@ export default (config, initialState) => {
       <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/foundation/6.2.4-rc2/foundation.min.css'>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css">
       <link rel="stylesheet" type="text/css" href='/static/app.css'>
+      <meta name="viewport" content="width=device-width" />
     </head>
     <body>
       <div id='root'></div>
