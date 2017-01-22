@@ -33,6 +33,7 @@ app.route('/contact').get(root);
 app.route('/faq').get(root);
 app.route('/service').get(root);
 app.route('/payment').get(root);
+app.route('/gallery').get(root);
 app.route('/images').get(images);
 
 

@@ -16,6 +16,7 @@ export class Bottombar extends React.Component {
                   <li><a href="#service">Services & Rates</a></li>
                   <li><a href="#contact">Contact Us</a></li>
                   <li><a href="#faq">FAQ</a></li>
+                  <li><a href="#gallery">Gallery</a></li>
                 </ul>
               </div>
               <div className='columns medium-6'>

@@ -5,7 +5,8 @@ import {Provider} from 'react-redux';
 import { Router, Route, browserHistory } from 'react-router'
 import HomePage from './components/HomePage';
 import ContactPage from './components/ContactPage';
-import ServicePage from './components/ServicePage'
+import ServicePage from './components/ServicePage';
+import GalleryPage from './components/GalleryPage';
 import styles from '../scss/index.scss';
 
 const state = window.__STATE;
@@ -18,6 +19,7 @@ ReactDOM.render(
       <Route path='/home' component={HomePage} />
       <Route path='/contact' component={ContactPage} />
       <Route path='/service' component={ServicePage} />
+      <Route path='/gallery' component={GalleryPage} />
     </Router>
   </Provider>,
   document.getElementById('root')
